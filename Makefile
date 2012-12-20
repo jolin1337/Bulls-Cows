@@ -1,4 +1,4 @@
-srcs=Menu/Menu.cpp Solver.cpp header.cpp Gissning/Gissning.cpp main2.cpp BullsCows.cpp Render/ScreenRender.cpp Render/Linux.cpp 
+srcs=Menu/Menu.cpp Solver.cpp header.cpp Gissning/Gissning.cpp main.cpp BullsCows.cpp Render/ScreenRender.cpp Render/Linux.cpp 
 head=BullsCows.h header.h Gissning/Gissning.h Render/Linux.h Render/ScreenRender.h Menu/Menu.h DistinktNumber/DistinktNumber.h Highscore.h
 op=cowGame
 

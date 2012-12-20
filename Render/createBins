@@ -1,0 +1,18 @@
+#!/bin/bash
+error(){
+	echo $1
+	exit 1
+}
+
+[ -d "./bin" ] || mkdir bin
+err=$?
+if [ $err -ne 0 ]
+then
+	exit 1
+fi
+
+for source in $@
+do 
+	g++ -fpic -c ${source}.cpp -o ./bin/${source}.o
+	g++ -shared -o ./bin/${source}.so ./bin/${source}.o
+done
